@@ -7,19 +7,24 @@
     <title>Document</title>
 </head>
 <style>
-    table, th,tr,td{
+    table, tbody, th,tr,td{
         border: 1px solid gray;
         border-collapse: collapse;
-        color:gray;
+        color: gray;
     }
-    #noBorder {
-        border: none;
+    .bground{
+        background-color: gray;
+        color: white;
         border-collapse: collapse;
     }
 
-    span {
-        /* line-height: 1cm; */
-        /* border: 1px solid black; */
+    tr#noBorder,td#noBorder{
+        /* border: none; */
+        border-collapse: collapse;
+        color:gray;
+    }
+
+    .blue{
         background-color: rgb(0, 158, 250);
         color: white;
         font-weight: bold;
@@ -29,86 +34,98 @@
     table {
         width: 100%;
     }
+    #left{
+        color: orange; 
+        font-weight: bold; 
+        font-size: 30px;
+        float: right;
+    }
+
+    #right{
+        color: black; 
+        font-weight: bold; 
+        font-size: 20px;
+        float: left;
+    }
 </style>
 <body>
     <table>
-        <tr>
-            <th id="noBorder" colspan="2">
-                INVOICE
-            </th>
-            <th  id="noBorder" colspan="2">
-                DUNIA TRAVEL
-            </th>
-        </tr>
-        <tr  id="noBorder">
-            <td id="noBorder">
-                Kode Pemesanan
-            </td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder">
-                (Booking Code)
-                2RT34YR
-            </td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder"></td> 
-            <td  id="noBorder">
-                Nama
-            </td id="noBorder">
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi nama</td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder"></td> 
-            <td id="noBorder">
-                Alamat
-            </td>
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi Alamat</td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder"></td> 
-            <td  id="noBorder">
-                Telepon
-            </td>
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi Telepon</td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder"></td> 
-            <td  id="noBorder">
-                Email
-            </td>
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi Email</td>
-        </tr>
-        <tr  id="noBorder">
-            <td id="noBorder"></td> 
-            <td  id="noBorder">
-                Tanggal Pesan
-            </td>
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi Tanggal Pesan</td>
-        </tr>
-        <tr  id="noBorder">
-            <td  id="noBorder"></td> 
-            <td  id="noBorder">
-                Terakhir Bayar
-            </td>
-            <td  id="noBorder">:</td>
-            <td  id="noBorder">isi Terakhir Bayar</td>
-        </tr>
+            <tr>
+                <th id="noBorder" colspan="4">
+                    <span id="right">INVOICE</span>
+                    <span id="left">DUNIA TRAVEL</span>
+                </th>
+            </tr>
+            <tr  id="noBorder">
+                <td id="noBorder">
+                    Kode Pemesanan
+                </td>
+            </tr>
+            <tr  id="noBorder" >
+                <td  id="noBorder" width="70%">
+                    (Booking Code)
+                    2RT34YR
+                </td>
+            </tr>
+            <tr  id="noBorder">
+                <td  id="noBorder"></td> 
+                <td  id="noBorder">
+                    Nama
+                </td id="noBorder">
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi nama</td>
+            </tr>
+            <tr  id="noBorder">
+                <td  id="noBorder"></td> 
+                <td id="noBorder">
+                    Alamat
+                </td>
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi Alamat</td>
+            </tr>
+            <tr  id="noBorder">
+                <td  id="noBorder"></td> 
+                <td  id="noBorder">
+                    Telepon
+                </td>
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi Telepon</td>
+            </tr>
+            <tr  id="noBorder">
+                <td  id="noBorder"></td> 
+                <td  id="noBorder">
+                    Email
+                </td>
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi Email</td>
+            </tr>
+            <tr  id="noBorder">
+                <td id="noBorder"></td> 
+                <td  id="noBorder">
+                    Tanggal Pesan
+                </td>
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi Tanggal Pesan</td>
+            </tr>
+            <tr  id="noBorder">
+                <td  id="noBorder"></td> 
+                <td  id="noBorder">
+                    Terakhir Bayar
+                </td>
+                <td  id="noBorder">:</td>
+                <td  id="noBorder">isi Terakhir Bayar</td>
+            </tr>
+        
     </table>
     <br>
-    <span>DATA PERJALANAN</span>
+    <span class="blue">DATA PERJALANAN</span>
     <table>
         <tr>
-            <th>TANGGAL</th>
-            <th>NO KA</th>
-            <th>NAMA KERETA</th>
-            <th>WAKTU BERANGKAT</th>
-            <th>WAKTU TIBA</th>
+            <th class="bground">TANGGAL</th>
+            <th class="bground">NO KA</th>
+            <th class="bground">NAMA KERETA</th>
+            <th class="bground">WAKTU BERANGKAT</th>
+            <th class="bground">WAKTU TIBA</th>
         </tr>
         <tr>
             <td>13 des 2021</td>
@@ -119,7 +136,7 @@
         </tr>
     </table>
     <br>
-    <span>DATA PENUMPANG</span>
+    <span class="blue">DATA PENUMPANG</span>
     <table>
         <tr>
             <th colspan="2">NAMA</th>
@@ -136,13 +153,13 @@
     </table>
 
     <br>
-    <span>DETAIL PEMBAYARAN</span>
+    <span class="blue">DETAIL PEMBAYARAN</span>
     <table>
         <tr>
-            <th colspan="2">JENIS PENUMPANG</th>
-            <th>JUMLAH</th>
-            <th>HARGA TIKET</th>
-            <th>TOTAL</th>            
+            <th  class="bground" colspan="2">JENIS PENUMPANG</th>
+            <th  class="bground">JUMLAH</th>
+            <th  class="bground">HARGA TIKET</th>
+            <th  class="bground">TOTAL</th>            
         </tr>
         <tr>
             <td colspan="2">Dewasa</td>

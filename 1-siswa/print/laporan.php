@@ -7,9 +7,10 @@ $html = '
         border-collapse: collapse;
         color:gray;
     }
-    #noBorder {
+    th#noBorder,tr#noBorder,td#noBorder{
         border: none;
         border-collapse: collapse;
+        color:gray;
     }
 
     span {
